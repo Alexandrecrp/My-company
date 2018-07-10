@@ -1,0 +1,97 @@
+/**
+ * Main stylesheet of the project.
+ */
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+#main-content {
+	width: 100%;
+	height: auto;
+	position: relative;
+	float: left;
+}
+
+/*
+ * styles shared by all sections inside div main-content
+ */
+#main-content section {
+  min-height: 70vh;
+  padding-top: 81px;
+  padding-bottom: 0px;
+  box-shadow: inset 0px 2px 20px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/*
+ * style of first section inside div main-content
+ */
+#main-content section:first-child {
+  box-shadow: none;
+}
+
+/*
+ * styles applied on every section container
+ */
+
+#main-content section .container {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: opacity ease 0.8s, transform ease 0.8s;
+}
+
+
+/*
+ * styles applied on every section container when active
+ */
+#main-content section.active .container {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#main-content section .container img{
+  max-width: auto;
+	max-height: auto;
+}
+
+#pagina-1 {
+  background-color: #FFFFFFF;
+}
+
+#pagina-2 {
+  background-color: #F5F5F5;
+}
+
+#pagina-3 {
+  background-color: #FFFFFFF;
+}
+
+#pagina-4 {
+  background-color: #81AB41;
+}
+
+/**
+ * Styles used only by large devices
+ */
+@media (min-width: 613px) {
+  #main-content section {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+/**
+ * Styles used only by small devices
+ * 612px is an appropriate breakpoint for this project,
+ * it may vary acording to interactions and usability
+ */
+@media (max-width: 612px) {
+  #main-content section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

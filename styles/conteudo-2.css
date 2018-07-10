@@ -1,0 +1,77 @@
+/**
+ * Content-2 animation styles.
+ */
+
+/*
+ * styles applied only on container inside '#content-2'
+ */
+#main-content #content-2 .container {
+  opacity: 1;
+  transform: translate(0);
+  transition: color ease 0.6s;
+}
+
+/*
+ * styles applied only on container inside '#content-2' when active
+ */
+#main-content #content-2.active .container {
+  color: #000000;
+}
+
+/*
+ * styles applied only on h1 inside '#content-2'
+ */
+#main-content #content-2 .container h1 {
+  transform: translate(14%, 0);
+  transition: transform ease 2s;
+}
+
+/*
+ * styles applied only on h1 inside '#content-2' when active
+ */
+#main-content #content-2.active .container h1 {
+  transform: translate(0);
+}
+
+/*
+ * styles applied only on p inside '#content-2'
+ */
+#main-content #content-2 .container p{
+  transform: translate(16%, 0);
+  transition: transform ease 2.2s;
+}
+
+/*
+ * styles applied only on p inside '#content-2' when active
+ */
+#main-content #content-2.active .container p {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/*
+ * styles applied only on img inside '#content-2'
+ */
+
+/*
+#main-content #content-2 .container img {
+  transform: translateY(40%) scale(1);
+  transition: transform ease 3s;
+}
+*/
+/*
+ * styles applied only on img inside '#content-2' when active
+ */
+/*
+#main-content #content-2.active .container img {
+  transform: translateY(20%) scale(1.4);
+}
+*/
+/*
+ * styles applied only on img inside '#content-2' when active
+ */
+/*
+#main-content #content-2.active .container img:hover {
+  transform: translateY(30%) scale(1.6);
+}
+*/
